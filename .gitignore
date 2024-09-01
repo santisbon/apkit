@@ -130,3 +130,6 @@ dist
 .pnp.*
 .eslintrc.js
 .vscode/*
+
+# Backup files
+*.bkp
