@@ -1,7 +1,7 @@
 import { describe, before, after, it } from 'node:test'
 import { KeyStorage } from '../lib/keystorage.js'
 import assert from 'node:assert'
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
 
 describe('KeyStorage', async () => {
   let connection = null

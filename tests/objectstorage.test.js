@@ -2,7 +2,7 @@ import { describe, it, before, after } from 'node:test'
 import as2 from 'activitystrea.ms'
 import assert from 'node:assert'
 import { ObjectStorage, NoSuchObjectError } from '../lib/objectstorage.js'
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
 
 describe('ObjectStorage', async () => {
   let doc = null

@@ -1,7 +1,7 @@
 import { describe, it, before, after } from 'node:test'
 import assert from 'node:assert'
 import { ActorStorage } from '../lib/actorstorage.js'
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
 import { UrlFormatter } from '../lib/urlformatter.js'
 import as2 from 'activitystrea.ms'
 

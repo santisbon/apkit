@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test'
 import assert from 'node:assert'
 import { makeApp } from '../lib/app.js'
-import request from 'supertest'
+import request from 'supertest' // High-level abstraction for testing HTTP
 import bots from './fixtures/bots.js'
 
 describe('actor routes', async () => {

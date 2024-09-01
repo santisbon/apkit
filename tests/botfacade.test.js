@@ -1,7 +1,7 @@
 import { describe, it, before, after, beforeEach } from 'node:test'
 import assert from 'node:assert'
 import { BotFacade } from '../lib/botfacade.js'
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
 import { BotDataStorage } from '../lib/botdatastorage.js'
 import { ObjectStorage } from '../lib/objectstorage.js'
 import { KeyStorage } from '../lib/keystorage.js'
@@ -12,8 +12,8 @@ import { ActorStorage } from '../lib/actorstorage.js'
 import { Authorizer } from '../lib/authorizer.js'
 import { ObjectCache } from '../lib/objectcache.js'
 import as2 from 'activitystrea.ms'
-import Logger from 'pino'
-import nock from 'nock'
+import Logger from 'pino' // Very low overhead Node.js logger
+import nock from 'nock' // HTTP server mocking and expectations library. Used to test modules that perform HTTP requests.
 import bots from './fixtures/bots.js'
 
 const makeActor = (username) =>

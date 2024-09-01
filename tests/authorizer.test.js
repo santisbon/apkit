@@ -1,14 +1,14 @@
 import { describe, it, before, after } from 'node:test'
 import { Authorizer } from '../lib/authorizer.js'
 import { ActorStorage } from '../lib/actorstorage.js'
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
 import { UrlFormatter } from '../lib/urlformatter.js'
 import { ObjectStorage } from '../lib/objectstorage.js'
 import { KeyStorage } from '../lib/keystorage.js'
 import { ActivityPubClient } from '../lib/activitypubclient.js'
 import as2 from 'activitystrea.ms'
 import assert from 'node:assert/strict'
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid' // URL-friendly, unique string ID generator with a larger alphabet than UUID (A-Za-z0-9_-). ID size reduced from 36 to 21 symbols.
 
 describe('Authorizer', () => {
   let authorizer = null

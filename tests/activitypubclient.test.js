@@ -3,8 +3,8 @@ import { KeyStorage } from '../lib/keystorage.js'
 import { UrlFormatter } from '../lib/urlformatter.js'
 import { ActivityPubClient } from '../lib/activitypubclient.js'
 import assert from 'node:assert'
-import { Sequelize } from 'sequelize'
-import nock from 'nock'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
+import nock from 'nock' // HTTP server mocking and expectations library. Used to test modules that perform HTTP requests.
 import as2 from 'activitystrea.ms'
 
 const makeActor = (username) =>

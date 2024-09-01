@@ -1,9 +1,9 @@
 import { describe, it, before, after, beforeEach } from 'node:test'
 import { ActorStorage } from '../lib/actorstorage.js'
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize' // ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake
 import { UrlFormatter } from '../lib/urlformatter.js'
 import as2 from 'activitystrea.ms'
-import nock from 'nock'
+import nock from 'nock' // HTTP server mocking and expectations library. Used to test modules that perform HTTP requests.
 import { KeyStorage } from '../lib/keystorage.js'
 import { ActivityPubClient } from '../lib/activitypubclient.js'
 import assert from 'node:assert'
